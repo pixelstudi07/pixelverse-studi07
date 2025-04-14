@@ -1,71 +1,103 @@
 <!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PixelVerse Studi07</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      background-color: #0d0d0d;
-      font-family: 'Orbitron', sans-serif;
+      background-color: #000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
-    }.typewriter-container {
-  font-size: 1.5rem;
-  width: 90%;
-  max-width: 800px;
+    }header {
   text-align: center;
-  color: #00ffe1;
-}
-
-.typewriter-text {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid #00ffe1;
-  animation: typing 5s steps(60, end) forwards, blink 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink {
-  0%, 100% { border-color: transparent }
-  50% { border-color: #00ffe1 }
-}
-
-.insta-link {
-  margin-top: 40px;
-}
-
-.insta-link a {
-  background: #00ffe1;
-  color: #0d0d0d;
-  padding: 12px 24px;
-  border-radius: 8px;
+  padding: 2rem 1rem 1rem;
+  font-size: 2rem;
   font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s ease;
+  color: #00e0ff;
 }
 
-.insta-link a:hover {
-  background-color: #00ccbe;
+p.tagline {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ccc;
+  margin: 0 1rem 2rem;
+}
+
+section.reels {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.reel {
+  width: 90%;
+  max-width: 400px;
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #00e0ff33;
+  transition: transform 0.3s ease;
+}
+
+.reel:hover {
+  transform: scale(1.03);
+}
+
+.reel a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.reel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  padding: 0.7rem 1rem;
+  font-size: 0.95rem;
+  color: #eee;
 }
 
   </style>
 </head><body>
-  <div class="typewriter-container">
-    <div class="typewriter-text">
-      PixelVerse Studi07 — Edits that Feel, Frames that Speak — High-quality reels | Celeb & Fan edits | DM for Collab
-    </div>
-  </div>  <div class="insta-link">
-    <a href="https://www.instagram.com/pv_studi07" target="_blank">Check Out My Reels</a>
-  </div>
+  <header>PixelVerse Studi07</header>
+  <p class="tagline">Edits that feel. Frames that speak. High-quality reels | Celeb & fan edits | DM for collab</p>  <section class="reels">
+    <div class="reel">
+      <a href="https://www.instagram.com/reel/DIS7tWqIzpw/?igsh=eWxta3Y4aXY4eXRq" target="_blank">
+        <img src="https://via.placeholder.com/400x300?text=Edit+1" alt="Edit 1 Thumbnail" />
+        <div class="caption">Just an edit, but feelings—100% real.</div>
+      </a>
+    </div><div class="reel">
+  <a href="https://www.instagram.com/reel/DIDxG2eRpJX/?igsh=NzBobTF5NTV5amEx" target="_blank">
+    <img src="https://via.placeholder.com/400x300?text=Edit+2" alt="Edit 2 Thumbnail" />
+    <div class="caption">Just an edit, but feelings—100% real.</div>
+  </a>
+</div>
+
+<div class="reel">
+  <a href="https://www.instagram.com/reel/DIaopseR-cN/?igsh=MTFjbTczZWVucWJvMw==" target="_blank">
+    <img src="https://via.placeholder.com/400x300?text=Edit+3" alt="Edit 3 Thumbnail" />
+    <div class="caption">Just an edit, but feelings—100% real.</div>
+  </a>
+</div>
+
+<div class="reel">
+  <a href="https://www.instagram.com/reel/DIIeVyUIcRq/?igsh=bTFhdjFlZHU4aTFj" target="_blank">
+    <img src="https://via.placeholder.com/400x300?text=Edit+4" alt="Edit 4 Thumbnail" />
+    <div class="caption">Just an edit, but feelings—100% real.</div>
+  </a>
+</div>
+
+<div class="reel">
+  <a href="https://www.instagram.com/reel/DIOsGhJIHco/?igsh=aTZhaWxhbHU3NWt6" target="_blank">
+    <img src="https://via.placeholder.com/400x300?text=Edit+5" alt="Edit 5 Thumbnail" />
+    <div class="caption">Just an edit, but feelings—100% real.</div>
+  </a>
+</div>
+
+  </section>
 </body></html>
