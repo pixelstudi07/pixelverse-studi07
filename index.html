@@ -1,58 +1,71 @@
-<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PixelVerse Studi07</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      background-color: #000;
+      background-color: #0d0d0d;
+      font-family: 'Orbitron', sans-serif;
       color: #fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
       overflow: hidden;
-    }h1 {
-  font-size: 2.5rem;
-  background: linear-gradient(90deg, #00e0ff, #3effa8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: glow 2s ease-in-out infinite alternate;
+    }.typewriter-container {
+  font-size: 1.5rem;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  color: #00ffe1;
 }
 
-@keyframes glow {
-  from {
-    text-shadow: 0 0 5px #00e0ff, 0 0 10px #3effa8;
-  }
-  to {
-    text-shadow: 0 0 15px #00e0ff, 0 0 30px #3effa8;
-  }
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #00ffe1;
+  animation: typing 5s steps(60, end) forwards, blink 0.75s step-end infinite;
 }
 
-p {
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
-  color: #ccc;
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-spline-viewer {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+@keyframes blink {
+  0%, 100% { border-color: transparent }
+  50% { border-color: #00ffe1 }
+}
+
+.insta-link {
+  margin-top: 40px;
+}
+
+.insta-link a {
+  background: #00ffe1;
+  color: #0d0d0d;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.insta-link a:hover {
+  background-color: #00ccbe;
 }
 
   </style>
-  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
-</head>
-<body>
-  <spline-viewer url="https://prod.spline.design/KJikI9w5bmj8Ym8Y/scene.splinecode"></spline-viewer>
-  <h1>PixelVerse Studi07</h1>
-  <p>Edits that feel. Frames that speak. <br/> High-quality reels | Celeb & fan edits | DM for collab</p>
-</body>
-</html>
+</head><body>
+  <div class="typewriter-container">
+    <div class="typewriter-text">
+      PixelVerse Studi07 — Edits that Feel, Frames that Speak — High-quality reels | Celeb & Fan edits | DM for Collab
+    </div>
+  </div>  <div class="insta-link">
+    <a href="https://www.instagram.com/pv_studi07" target="_blank">Check Out My Reels</a>
+  </div>
+</body></html>
