@@ -1,45 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PixelVerse Studi07</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #000000, #001f1f);
+      color: #00ffff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #111;
+    }
+    .logo {
+      height: 50px;
+    }
+    nav {
+      display: none;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hamburger {
+      display: block;
+      font-size: 28px;
+      cursor: pointer;
+    }
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #ccc;
+    }
+    .featured {
+      display: none;
+      padding: 30px 20px;
+    }
+    .featured h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+    .grid img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .grid img:hover {
+      transform: scale(1.05);
+    }
+    @media(min-width: 768px) {
+      nav {
+        display: block;
+      }
+      .hamburger {
+        display: none;
+      }
+    }
+    #mobile-menu {
+      display: none;
+      flex-direction: column;
+      background: #111;
+      padding: 10px;
+    }
+    #mobile-menu a {
+      padding: 10px 0;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <nav>
-      <img src="assets/images/logo.png" alt="PixelVerse Logo" class="logo"/>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#featured">Featured</a></li>
-      </ul>
+    <img src="assets/images/logo.png" alt="PixelVerse Logo" class="logo">
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <nav id="desktop-menu">
+      <a href="#" onclick="showHome()">Home</a>
+      <a href="#" onclick="showFeatured()">Featured</a>
     </nav>
   </header>
-
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <h1>PixelVerse Studi07</h1>
-      <p>Edits that feel. Frames that speak.</p>
-      <p>High-quality reels | Celeb & fan edits | DM for collab</p>
-    </div>
-  </section>
-
-  <section class="featured" id="featured">
+  <div id="mobile-menu"></div>  <section class="hero" id="home">
+    <h1>PixelVerse Studi07</h1>
+    <p>Edits that feel. Frames that speak.</p>
+    <p style="color: #aaa; font-size: 14px;">High-quality reels | Celeb & fan edits | DM for collab</p>
+  </section>  <section class="featured" id="featured">
     <h2>Featured Edits</h2>
     <div class="grid">
-      <img src="assets/images/thumbnail1.jpg" alt="Edit 1"/>
-      <img src="assets/images/thumbnail2.jpg" alt="Edit 2"/>
-      <img src="assets/images/thumbnail3.jpg" alt="Edit 3"/>
-      <img src="assets/images/thumbnail4.jpg" alt="Edit 4"/>
-      <img src="assets/images/thumbnail5.jpg" alt="Edit 5"/>
+      <img src="assets/images/thumbnail1.jpg" alt="Edit 1">
+      <img src="assets/images/thumbnail2.jpg" alt="Edit 2">
+      <img src="assets/images/thumbnail3.jpg" alt="Edit 3">
+      <img src="assets/images/thumbnail4.jpg" alt="Edit 4">
+      <img src="assets/images/thumbnail5.jpg" alt="Edit 5">
     </div>
-  </section>
+  </section>  <script>
+    function toggleMenu() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu.innerHTML === '') {
+        mobileMenu.innerHTML = `
+          <a href="#" onclick="showHome()">Home</a>
+          <a href="#" onclick="showFeatured()">Featured</a>
+        `;
+        mobileMenu.style.display = 'flex';
+      } else {
+        mobileMenu.innerHTML = '';
+        mobileMenu.style.display = 'none';
+      }
+    }
 
-  <footer>
-    <p>© 2025 PixelVerse Studi07 | All rights reserved.</p>
-  </footer>
+    function showFeatured() {
+      document.getElementById('home').style.display = 'none';
+      document.getElementById('featured').style.display = 'block';
+      document.getElementById('mobile-menu').innerHTML = '';
+    }
 
-  <script src="script.js"></script>
-</body>
+    function showHome() {
+      document.getElementById('home').style.display = 'block';
+      document.getElementById('featured').style.display = 'none';
+      document.getElementById('mobile-menu').innerHTML = '';
+    }
+  </script></body>
 </html>
