@@ -1,7 +1,56 @@
-.reel-section {
-  background: #000;
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #000;
   color: white;
-  padding: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.hamburger {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  background: #222;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links li {
+  margin: 10px 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.reel-section {
+  padding: 30px 20px;
   text-align: center;
 }
 
@@ -10,8 +59,7 @@
 }
 
 .reel img {
-  width: 120px;
-  height: auto;
-  border-radius: 10px;
+  width: 150px;
+  border-radius: 12px;
   margin-bottom: 10px;
 }
