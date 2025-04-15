@@ -2,30 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Featured Edits – PixelVerse Studi07</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelVerse Studi07</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #00ffe1;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+    header img {
+      width: 100px;
+      border-radius: 50%;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+    .spline {
+      margin: 3rem 0;
+    }
+    .reel {
+      margin-bottom: 2.5rem;
+    }
+    .reel img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    .caption {
+      color: #ffffff;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">PixelVerse</div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="featured.html">Featured Edits</a></li>
-    </ul>
-  </nav>
 
-  <section class="hero">
-    <h1>Featured Edits</h1>
-    <p>Check out some of the best edits I've done – only for true fans!</p>
-    <!-- Baad mein images yahan add kar dena -->
-  </section>
+  <header>
+    <img src="logo.png" alt="PixelVerse Logo">
+    <h1>PixelVerse Studi07</h1>
+    <p>Edits that feel. Frames that speak.<br>High-quality reels | Celeb & Fan edits | DM for collab</p>
+  </header>
 
-  <script>
-    function toggleMenu() {
-      document.getElementById("navLinks").classList.toggle("active");
-    }
-  </script>
+  <!-- Spline 3D Scene -->
+  <div class="spline">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/0f65942f-025d-4cbd-9904-f38a58fc2e00/scene.splinecode" style="width: 100%; height: 500px;"></spline-viewer>
+  </div>
+
+  <!-- Reels Section -->
+  <div class="reel">
+    <img src="thumbnail1.jpg" alt="Reel Thumbnail">
+    <div class="caption">Her smile is my favorite notification🙂✨.</div>
+  </div>
+  <div class="reel">
+    <img src="thumbnail2.jpg" alt="Reel Thumbnail">
+    <div class="caption">Meanwhile the Best dream💕🎀🫠.</div>
+  </div>
+  <div class="reel">
+    <img src="thumbnail3.jpg" alt="Reel Thumbnail">
+    <div class="caption">Just an edit, but feelings-100% real.</div>
+  </div>
+  <div class="reel">
+    <img src="thumbnail4.jpg" alt="Reel Thumbnail">
+    <div class="caption">Kuch nazar ka jaadu hota hai, Aur kuch Leela ka....✨🫠💕.</div>
+  </div>
+  <div class="reel">
+    <img src="thumbnail5.jpg" alt="Reel Thumbnail">
+    <div class="caption">Uski awaaz mein kuch aisa hai... jaise sukoon ko bhi sukoon mil jaaye.✨</div>
+  </div>
+
 </body>
 </html>
