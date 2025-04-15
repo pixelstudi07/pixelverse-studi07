@@ -1,14 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PixelVerse Studi07</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-  <nav>
+  <nav class="navbar">
     <div class="logo">PixelVerse</div>
-    <div class="menu">
-      <a href="index.html">Home</a>
-      <a href="featured.html">Featured Edits</a>
-    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="featured.html">Featured Edits</a></li>
+    </ul>
   </nav>
 
   <section class="hero">
     <h1>Welcome to PixelVerse Studi07</h1>
-    <p>Your one-stop place for stunning celebrity edits, made with love & creativity.</p>
+    <p>Premium celebrity edits by a true fan. Dive into creativity!</p>
   </section>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
 </body>
+</html>
