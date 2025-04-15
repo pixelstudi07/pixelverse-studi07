@@ -1,1 +1,37 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+}
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #00ffe1;
+}
+
+nav .menu a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #ccc;
+}
+
+nav .menu a:hover {
+  color: #00ffe1;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
