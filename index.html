@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">PixelVerse</div>
     <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -16,15 +18,21 @@
     </ul>
   </nav>
 
-  <section class="hero">
-    <h1>Welcome to PixelVerse Studi07</h1>
-    <p>Premium celebrity edits by a true fan. Dive into creativity!</p>
-  </section>
+  <!-- Hero Section with background -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="logo.png" alt="Logo" class="logo-img"/>
+      <h1>PixelVerse Studi07</h1>
+      <p>Premium Celebrity Edits | Sreeleela Fan Page</p>
+      <a href="featured.html" class="btn">View Featured Edits</a>
+    </div>
+  </header>
 
   <script>
     function toggleMenu() {
       document.getElementById("navLinks").classList.toggle("active");
     }
   </script>
+
 </body>
 </html>
